@@ -371,29 +371,29 @@
     else
         [self.leftMenuList removeAllObjects];
     
-    LeftMenuItem* account = [LeftMenuItem alloc];
-    account.iconName = @"setting_account setting";
-    account.actionName = ITS_NSLocalizedString(@"Account_set", nil);
-    [self.leftMenuList addObject:account];
+    LeftMenuItem* fav = [LeftMenuItem alloc];
+    fav.iconName = @"范冰冰";
+    fav.actionName = @"我的收藏";
+    [self.leftMenuList addObject:fav];
 
     LeftMenuItem* comment = [LeftMenuItem alloc];
-    comment.iconName = @"setting_my comment";
-    comment.actionName = ITS_NSLocalizedString(@"about_me", nil);
+    comment.iconName = @"范冰冰";
+    comment.actionName = @"留言追蹤";
     [self.leftMenuList addObject:comment];
     // fav
-    LeftMenuItem* fav = [LeftMenuItem alloc];
-    fav.iconName = @"sidebar_myfavorites";
-    fav.actionName = ITS_NSLocalizedString(@"LMenuFavour", nil);
-    [self.leftMenuList addObject:fav];
+    LeftMenuItem* download = [LeftMenuItem alloc];
+    download.iconName = @"范冰冰";
+    download.actionName = @"貼圖下載";
+    [self.leftMenuList addObject:download];
     
     LeftMenuItem* feed = [LeftMenuItem alloc];
-    feed.iconName = @"sidebar_newsfeeds";
-    feed.actionName = ITS_NSLocalizedString(@"LMenuFeed", nil);
+    feed.iconName = @"范冰冰";
+    feed.actionName = @"買數位產品";
     [self.leftMenuList addObject:feed];
 
     LeftMenuItem* histroy = [LeftMenuItem alloc];
-    histroy.iconName = @"sidebar_recentlyread";
-    histroy.actionName = ITS_NSLocalizedString(@"LMenuHistroy", nil);
+    histroy.iconName = @"范冰冰";
+    histroy.actionName = @"買點數";
     [self.leftMenuList addObject:histroy];
 
 //    LeftMenuItem* download = [LeftMenuItem alloc];
@@ -402,9 +402,14 @@
 //    [self.leftMenuList addObject:download];
 
     LeftMenuItem* settings = [LeftMenuItem alloc];
-    settings.iconName = @"sidebar_settings";
-    settings.actionName = ITS_NSLocalizedString(@"LMenuConfig", nil);
+    settings.iconName = @"范冰冰";
+    settings.actionName = @"粉絲牆";
     [self.leftMenuList addObject:settings];
+    
+    LeftMenuItem* menu = [LeftMenuItem alloc];
+    menu.iconName = @"范冰冰";
+    menu.actionName = @"購買清單";
+    [self.leftMenuList addObject:menu];
 }
 
 -(NSMutableArray*) getSettingList{

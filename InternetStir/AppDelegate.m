@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ITSApplication.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,11 @@
     // Override point for customization after application launch.
     
     [ITSApplication start];
-    
+    ViewController *root = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:root];
+    self.window.rootViewController = nav;
+    self.window.backgroundColor = [UIColor whiteColor];
+
     return YES;
 }
 
